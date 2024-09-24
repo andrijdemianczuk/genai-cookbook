@@ -97,6 +97,7 @@ destination_tables_config = {
     "vectorsearch_index_table_name": f"`{UC_CATALOG}`.`{UC_SCHEMA}`.`{RAG_APP_NAME}_poc_chunked_docs_gold_index`",
 }
 destination_tables_config["vectorsearch_index_name"] = destination_tables_config["vectorsearch_index_table_name"].replace("`", "")
+
 # COMMAND ----------
 
 # MAGIC %md
@@ -201,7 +202,7 @@ Context: {context}""".strip(),
         "messages": [
             {
                 "role": "user",
-                "content": "What is RAG?",
+                "content": "What is the biggest city in Indonesia?",
             },
         ]
     },

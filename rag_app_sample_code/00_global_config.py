@@ -34,15 +34,15 @@ RAG_APP_NAME = 'my_agent_app'
 
 # UC Catalog & Schema where outputs tables/indexs are saved
 # If this catalog/schema does not exist, you need create catalog/schema permissions.
-UC_CATALOG = f'{user_name}_catalog'
-UC_SCHEMA = f'rag_{user_name}'
+UC_CATALOG = f'ademianczuk'
+UC_SCHEMA = f'genai_cookbook'
 
 ## UC Model name where the POC chain is logged
 UC_MODEL_NAME = f"{UC_CATALOG}.{UC_SCHEMA}.{RAG_APP_NAME}"
 
 # Vector Search endpoint where index is loaded
 # If this does not exist, it will be created
-VECTOR_SEARCH_ENDPOINT = f'{user_name}_vector_search'
+VECTOR_SEARCH_ENDPOINT = f'one-env-shared-endpoint-13'
 
 # Source location for documents
 # You need to create this location and add files

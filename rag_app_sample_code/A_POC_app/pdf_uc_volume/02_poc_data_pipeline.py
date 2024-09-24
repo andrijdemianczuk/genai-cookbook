@@ -17,7 +17,7 @@
 
 # COMMAND ----------
 
-# MAGIC %pip install -qqqq -U pypdf==4.1.0 databricks-vectorsearch transformers==4.41.1 torch==2.3.0 tiktoken==0.7.0 langchain-text-splitters==0.2.2 mlflow mlflow-skinny
+# MAGIC %pip install -qqqq -U pypdf==4.1.0 databricks-vectorsearch transformers==4.41.1 torch==2.3.1 tiktoken==0.7.0 langchain-text-splitters==0.2.2 mlflow mlflow-skinny
 # MAGIC dbutils.library.restartPython()
 
 # COMMAND ----------
@@ -93,7 +93,7 @@ raw_files_df = (
     spark.read.format("binaryFile")
     .option("recursiveFileLookup", "true")
     .option("pathGlobFilter", f"*.{pipeline_config.get('file_format')}")
-    .load(SOURCE_PATH)
+    .load(f'{SOURCE_PATH}/travel')
 )
 
 # Save to a table
@@ -456,7 +456,7 @@ print(f"Gold Delta Table w/ chunked files: {get_table_url(destination_tables_con
 # COMMAND ----------
 
 # DBTITLE 1,Testing the Index
-index.similarity_search(columns=["chunked_text", "chunk_id", "path"], query_text="your query text")
+index.similarity_search(columns=["chunked_text", "chunk_id", "path"], query_text="what is the best thing to do on vacation for someone who is interested in art?")
 
 # COMMAND ----------
 

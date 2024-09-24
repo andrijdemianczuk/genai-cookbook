@@ -201,7 +201,7 @@ input_example = {
         "messages": [
             {
                 "role": "user",
-                "content": "User's first question",
+                "content": "What is the best city to start vacation in Indonesia?",
             },
             {
                 "role": "assistant",
@@ -209,9 +209,9 @@ input_example = {
             },
             {
                 "role": "user",
-                "content": "User's next question",
+                "content": "What are the most popular things to do here?",
             },
         ]
     }
 
-# chain.invoke(input_example)
+chain.invoke(input_example)

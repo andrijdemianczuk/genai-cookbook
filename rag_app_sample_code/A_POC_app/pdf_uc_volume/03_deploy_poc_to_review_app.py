@@ -67,7 +67,7 @@ chain_input = {
     "messages": [
         {
             "role": "user",
-            "content": "What is RAG?", # Replace with a question relevant to your use case
+            "content": "What is swinging and why is it so popular in Indonesia?", # Replace with a question relevant to your use case
         }
     ]
 }

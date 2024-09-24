@@ -145,4 +145,4 @@ mlflow.models.set_model(model=chain)
 
 # COMMAND ----------
 
-# chain.invoke(model_config.get("input_example"))
+chain.invoke(model_config.get("input_example"))
