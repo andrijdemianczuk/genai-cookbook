@@ -13,6 +13,17 @@
 # COMMAND ----------
 
 # MAGIC %md
+# MAGIC %md
+# MAGIC
+# MAGIC # Build & deploy the application
+# MAGIC
+# MAGIC Below is a high-level overview of the architecture we will deploy:
+# MAGIC
+# MAGIC <img src="https://github.com/databricks-demos/dbdemos-resources/blob/main/images/product/chatbot-rag/rag-basic.png?raw=true" style="width: 800px; margin-left: 10px">
+
+# COMMAND ----------
+
+# MAGIC %md
 # MAGIC ## Install libraries & import packages
 
 # COMMAND ----------

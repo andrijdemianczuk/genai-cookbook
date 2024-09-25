@@ -3,7 +3,7 @@ databricks_resources:
   vector_search_endpoint_name: one-env-shared-endpoint-13
 input_example:
   messages:
-  - content: What is RAG?
+  - content: What is the biggest city in Indonesia?
     role: user
 llm_config:
   llm_parameters:
