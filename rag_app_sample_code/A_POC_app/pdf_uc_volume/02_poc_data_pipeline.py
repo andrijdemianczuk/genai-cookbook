@@ -137,6 +137,8 @@ mlflow.log_input(mlflow.data.load_delta(table_name=destination_tables_config.get
 # MAGIC In Bronze/Silver/Gold terminology, this is your Silver table.
 # MAGIC
 # MAGIC Although not reccomended for your POC, if you want to change the parsing library or adjust it's settings, modify the contents of the `parse_bytes_pypdf` UDF.
+# MAGIC
+# MAGIC <img src="https://miro.medium.com/v2/resize:fit:607/1*M_4rm9RreFSnzBsf4Acrkw.png" />
 
 # COMMAND ----------
 
@@ -250,6 +252,8 @@ mlflow.log_input(mlflow.data.load_delta(table_name=destination_tables_config.get
 # MAGIC In Bronze/Silver/Gold terminology, this is your Gold table.
 # MAGIC
 # MAGIC Although not reccomended for your POC, if you want to change the chunking library or adjust it's settings, modify the contents of the `parse_bytes_pypdf` UDF.
+# MAGIC
+# MAGIC <img src="https://miro.medium.com/v2/resize:fit:1400/1*oz3i3fLHXMGXEDQK7ifpLQ.png" width=750 />
 
 # COMMAND ----------
 
